@@ -1,0 +1,19 @@
+<mat-form-field class="form-field">
+  <mat-label>Search Employee</mat-label>
+  <input matInput type="text" [formControl]="inputForm" />
+  <button
+    *ngIf="inputForm.value"
+    matSuffix
+    mat-icon-button
+    aria-label="Clear"
+    (click)="inputForm.setValue('')"
+  >
+    <mat-icon>x</mat-icon>
+  </button>
+</mat-form-field>
+
+<div class="resultList">
+  <div class="result" *ngFor="let each of renderList" (click)="clickName(each)">
+    {{ each.name }}
+  </div>
+</div>

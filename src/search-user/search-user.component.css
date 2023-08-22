@@ -1,0 +1,17 @@
+* {
+  font-family: Lato;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.result {
+  border: 1px solid grey;
+  padding-left: 20px;
+  height: 30px;
+}
+
+.result:hover {
+  background-color: #2b537d;
+}
